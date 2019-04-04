@@ -270,21 +270,5 @@
     @include respond($break95) {
       margin-top: 60px;
     }
-
-    .button-icon-secondary {
-      @include utilityPrimary;
-      justify-content: center;
-      width: 100%;
-      padding-top: 1.125em;
-      padding-bottom: 1.375em;
-      margin: 0;
-      font-size: 12px;
-
-      .manicon-x {
-        margin-left: 13px;
-        font-size: 14px;
-        vertical-align: middle;
-      }
-    }
   }
 }

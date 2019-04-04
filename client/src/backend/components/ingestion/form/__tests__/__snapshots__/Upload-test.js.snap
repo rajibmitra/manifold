@@ -128,14 +128,24 @@ exports[`Backend.Ingestion.Form.Upload component renders correctly 1`] = `
     }
   >
     <button
-      className="button-icon-secondary"
+      className="buttons-icon-horizontal__button button-icon-secondary button-icon-secondary--in-drawer"
       disabled={true}
       type="submit"
     >
-      <i
-        aria-hidden="true"
-        className="manicon manicon-check small"
-      />
+      <svg
+        aria-hidden={true}
+        className="manicon-svg button-icon-secondary__icon svg-icon--check16"
+        height={16}
+        viewBox="0 0 16 16"
+        width={16}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          fill="currentColor"
+          fillRule="nonzero"
+          points="14.204 2.5 6.411 12.011 1.721 7.432 1 8.135 6.495 13.5 15 3.122"
+        />
+      </svg>
       <span>
         Continue
       </span>

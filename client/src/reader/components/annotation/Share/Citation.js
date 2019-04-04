@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import IconComposer from "global/components/utility/IconComposer";
 
 export default class AnnotationShareEditor extends PureComponent {
   static displayName = "Annotation.Share.Citation";
@@ -99,10 +100,14 @@ export default class AnnotationShareEditor extends PureComponent {
                 <span>Cancel</span>
               </button>
               <button
-                className="button-secondary button-icon-secondary"
+                className="button-secondary"
                 onClick={this.handleCopyClick}
               >
-                <i className="manicon manicon-copy" aria-hidden="true" />
+                <IconComposer
+                  icon="copy24"
+                  size="default"
+                  iconClass="button-secondary__icon"
+                />
                 <span>Copy</span>
               </button>
             </div>

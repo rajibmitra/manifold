@@ -196,7 +196,7 @@
   @include templateHead;
   @include buttonUnstyled;
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   padding: 0.667em 17px 0.778em;
   font-size: 16px;
   color: $accentPrimary;
@@ -204,11 +204,32 @@
   text-decoration: none;
   letter-spacing: 0.015em;
   border: 1px solid $accentPrimary;
-  transition: color $duration $timing,
-    background-color $duration $timing;
+  transition:
+    color $duration $timing,
+    background-color $duration $timing,
+    border-color $duration $timing;
 
   @include respond($break60) {
     font-size: 18px;
+  }
+
+  &__icon {
+    position: relative;
+    top: 0.125em;
+    margin-right: 0.833em;
+
+    &--large {
+      top: 0.08em;
+    }
+
+    &--short {
+      top: 0;
+    }
+
+    &--right {
+      margin-right: 0;
+      margin-left: 0.833em;
+    }
   }
 
   &:disabled {
@@ -216,167 +237,67 @@
     border: 1px solid $neutral80;
   }
 
-  &:hover:not([disabled]) {
-    background-color: $accentPrimaryOffWhite;
+  &:focus:not([disabled]) {
+    background-color: $neutral95;
+    outline: 0;
   }
 
-  &:focus:not([disabled]) {
-    background-color: $focusPrimary;
-    outline: 0;
+  &:hover:not([disabled]),
+  &:focus:hover:not([disabled])
+  &:active:not([disabled]) {
+    color: $neutral90;
+    background-color: $accentPrimary;
   }
 
   &:focus:disabled {
     outline-offset: 2px;
   }
 
-  &:active:not([disabled]) {
-    color: $neutralWhite;
-    background-color: $accentPrimary;
-
-    .manicon {
-      color: $neutralWhite;
-    }
-  }
-
-  .bg-neutral05 &:not([disabled]) {
-    &:hover {
-      color: $neutralWhite;
-      background-color: $accentPrimary;
-
-      .manicon {
-        color: $neutralWhite;
-      }
-    }
-
-    &:focus {
-      color: $accentPrimary;
-      background-color: $neutral30;
-      outline: 0;
-
-      .manicon {
-        color: $accentPrimary;
-      }
-    }
-  }
-
-  .bg-neutral90 &:not([disabled]) {
-    &:hover {
-      color: $neutral90;
-      background-color: $accentPrimary;
-
-      .manicon {
-        color: $neutral90;
-      }
-    }
-
-    &:focus {
-      color: $accentPrimary;
-      background-color: $neutral95;
-      outline: 0;
-
-      .manicon {
-        color: $accentPrimary;
-      }
-    }
-  }
-
-  .dialog-primary .dialog-box &:not([disabled]) {
-    &:hover {
-      color: $neutral100;
-      background-color: $accentPrimary;
-
-      .manicon {
-        color: $neutral100;
-      }
-    }
-
-    &:focus {
-      color: $accentPrimary;
-      background-color: $neutral100;
-      outline: 0;
-
-      .manicon {
-        color: $accentPrimary;
-      }
-    }
-  }
-
-  .dialog-primary .dialog-box &.dull, &.dull {
+  &--dull {
     color: $neutral50;
     border-color: $neutral50;
 
-    &:hover {
-      color: $neutral50;
-      background-color: $neutral05;
-
-      .manicon {
-        color: $neutral50;
-      }
-    }
-
-    &:focus {
-      color: $neutral50;
-      background-color: $focusSecondary;
-
-      .manicon {
-        color: $neutral50;
-      }
-    }
-
-    &:active {
-      color: $neutralWhite;
-      background-color: $neutral50;
-
-      .manicon {
-        color: $neutralWhite;
-      }
-    }
-  }
-  //
-  // .manicon {
-  //   transition: color $duration $timing;
-  // }
-
-  .manicon-copy {
-    display: inline-block;
-    margin-top: -4px;
-    margin-right: 8px;
-    font-size: 1.4em;
-  }
-
-  .manicon-plus {
-    display: inline-block;
-    margin-right: 1.286em;
-    font-size: 0.778em;
-  }
-
-  .manicon-cube-multiple {
-    display: inline-block;
-    margin-right: 0.85em;
-    font-size: 1.2em;
-    vertical-align: middle;
-  }
-
-  .manicon-arrow-down {
-    margin-right: 16px;
-    font-size: 16px;
-
-    &::before {
-      position: relative;
-      top: 4px;
+    &:hover:not([disabled]),
+    &:focus:not([disabled]),
+    &:active:not([disabled]) {
+      color: $accentPrimary;
+      background-color: transparent;
+      border-color: $accentPrimary;
+      outline: 0;
     }
   }
 
-  .manicon-check.small,
-  .manicon-x.small,
-  .manicon-arrow-right.small,
-  .manicon-arrow-left.small {
-    margin-right: 16px;
+  &--full {
+    width: 100%;
+  }
+
+  &--centered {
+    justify-content: center;
+  }
+
+  &--smallcaps {
+    padding-top: 1.125em;
+    padding-bottom: 1.375em;
     font-size: 12px;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+  }
 
-    &::before {
-      position: relative;
-      top: 6px;
+  &--in-drawer {
+    width: 100%;
+
+    @include respond($break90) {
+      width: calc(50% - 17px);
+    }
+  }
+
+  &--wide {
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include respond($break85) {
+      width: calc(50% - 17px);
     }
   }
 }
@@ -397,8 +318,9 @@
   &.maintain {
     flex-wrap: nowrap;
 
-    .button-icon-secondary {
+    .buttons-icon-horizontal__button {
       width: calc(50% - 8px);
+      margin-bottom: 0;
     }
   }
 
@@ -406,27 +328,13 @@
     font-size: 0;
   }
 
-  .button-icon-secondary {
-    display: block;
-    width: 100%;
+  &__button {
     margin-bottom: 15px;
 
-    @include respond($break85) {
-      display: inline-block;
-      width: calc(50% - 17px);
-    }
+    &:not(.button-icon-secondary--in-drawer) {
+      width: 100%;
 
-    // TODO: This needs to override the above breakpoint to only change
-    // button width when the drawer width changes.  These styles should be able to be
-    // improved as we continue to refactor styles to use BEM structures.
-    .drawer-backend & {
       @include respond($break85) {
-        display: block;
-        width: 100%;
-      }
-
-      @include respond($break90) {
-        display: inline-block;
         width: calc(50% - 17px);
       }
     }

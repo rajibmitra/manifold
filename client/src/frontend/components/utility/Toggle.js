@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import labelId from "helpers/labelId";
 import classNames from "classnames";
-import Utility from "global/components/utility";
+import IconComposer from "global/components/utility/IconComposer";
 
 export default class Toggle extends Component {
   static displayName = "Utility.Toggle";
@@ -54,7 +54,7 @@ export default class Toggle extends Component {
 
     return (
       <div key={option.label} className={optionClasses}>
-        {option.icon && <Utility.IconComposer icon={option.icon} size={30} />}
+        {option.icon && <IconComposer icon={option.icon} size={30} />}
         <span className="button-switch-primary__label">{option.label}</span>
       </div>
     );

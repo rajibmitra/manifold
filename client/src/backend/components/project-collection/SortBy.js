@@ -123,7 +123,7 @@ export default class ProjectCollectionSortBy extends PureComponent {
     if (!this.props.projectCollection) return null;
 
     return (
-      <div className="project-collection-sort form-flex">
+      <div className="project-collection-sort">
         <form className="form-search-filter" onSubmit={this.handleSubmit}>
           <div className="form-list-filter">
             {this.renderSortList(this.props.projectCollection)}
