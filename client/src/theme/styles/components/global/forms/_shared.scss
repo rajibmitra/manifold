@@ -101,39 +101,31 @@
 }
 
 .password-input {
+  $visibility-toggle-size: 32px;
+
   position: relative;
 
   .hidden {
     display: none;
   }
 
-  .password-visibility-toggle {
+  &__visibility-toggle {
     position: absolute;
-    top: -1px;
+    top: -1 / 4 * $visibility-toggle-size - 1;
     left: 80px;
+    width: $visibility-toggle-size;
+    height: $visibility-toggle-size;
+    color: $neutral70;
     cursor: pointer;
-    background: none;
-    border: 0;
 
     &:focus {
       outline: 0;
-
-      .manicon {
-        @include focusOutline;
-        outline-offset: 2px;
-      }
     }
+  }
 
-    .manicon {
-      position: absolute;
-      font-size: 14px;
-      color: $neutral70;
-
-      &.manicon-eye-slash {
-        top: -3px;
-        font-size: 20px;
-      }
-    }
+  &__visibility-icon {
+    position: absolute;
+    cursor: pointer;
   }
 }
 

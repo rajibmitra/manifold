@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import debounce from "lodash/debounce";
 import classNames from "classnames";
 import { ApiClient } from "api";
+import IconComposer from "global/components/utility/IconComposer";
 
 class FetchSelect extends PureComponent {
   static mapStateToProps = state => {
@@ -163,7 +164,7 @@ class FetchSelect extends PureComponent {
 
   render() {
     const listClasses = classNames(this.props.className, {
-      "fetch-select-open":
+      "fetch-select--open":
         this.state.open === true && this.hasOptions(this.state.options)
     });
 
@@ -171,16 +172,20 @@ class FetchSelect extends PureComponent {
       <nav className={listClasses}>
         <div
           role="button"
-          className="fetch-select-trigger"
+          className="fetch-select__trigger"
           onClick={this.toggle}
           ref={e => (this.selectElement = e)}
         >
           {this.renderValue(this.props)}
-          <i className="manicon manicon-caret-down" />
+          <IconComposer
+            icon="disclosureDown16"
+            size={20}
+            iconClass="fetch-select__trigger-icon"
+          />
         </div>
-        <ul ref={e => (this._list = e)}>
+        <ul ref={e => (this._list = e)} className="fetch-select__list">
           {this.state.options.map(option => {
-            const listingClass = classNames({
+            const listingClass = classNames("fetch-select__item", {
               highlighted: option.id === this.state.highlighted
             });
             return (

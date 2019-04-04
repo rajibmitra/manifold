@@ -199,11 +199,7 @@ exports[`Backend Project New Container renders correctly 1`] = `
                     <span
                       aria-hidden="true"
                       className="toggle-indicator"
-                    >
-                      <i
-                        className="manicon"
-                      />
-                    </span>
+                    />
                     <span
                       className="toggle-label"
                     >
@@ -263,11 +259,7 @@ exports[`Backend Project New Container renders correctly 1`] = `
                     <span
                       aria-hidden="true"
                       className="toggle-indicator"
-                    >
-                      <i
-                        className="manicon"
-                      />
-                    </span>
+                    />
                     <span
                       className="toggle-label"
                     >
@@ -327,11 +319,7 @@ exports[`Backend Project New Container renders correctly 1`] = `
                     <span
                       aria-hidden="true"
                       className="toggle-indicator"
-                    >
-                      <i
-                        className="manicon"
-                      />
-                    </span>
+                    />
                     <span
                       className="toggle-label"
                     >
@@ -391,11 +379,7 @@ exports[`Backend Project New Container renders correctly 1`] = `
                     <span
                       aria-hidden="true"
                       className="toggle-indicator"
-                    >
-                      <i
-                        className="manicon"
-                      />
-                    </span>
+                    />
                     <span
                       className="toggle-label"
                     >

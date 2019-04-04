@@ -193,10 +193,34 @@ exports[`Backend Project General Container renders correctly 1`] = `
               <div
                 className="form-select input-month"
               >
-                <i
-                  aria-hidden="true"
-                  className="manicon manicon-caret-down"
-                />
+                <div
+                  className="form-select__icon"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="manicon-svg svg-icon--disclosureDown16"
+                    height={20}
+                    viewBox="0 0 16 16"
+                    width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      fillRule="evenodd"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        fillRule="nonzero"
+                        points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                      />
+                      <polygon
+                        fill="currentColor"
+                        fillRule="nonzero"
+                        points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                      />
+                    </g>
+                  </svg>
+                </div>
                 <select
                   onChange={[Function]}
                   value="NaN"
@@ -267,10 +291,34 @@ exports[`Backend Project General Container renders correctly 1`] = `
               <div
                 className="form-select input-day"
               >
-                <i
-                  aria-hidden="true"
-                  className="manicon manicon-caret-down"
-                />
+                <div
+                  className="form-select__icon"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="manicon-svg svg-icon--disclosureDown16"
+                    height={20}
+                    viewBox="0 0 16 16"
+                    width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      fillRule="evenodd"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        fillRule="nonzero"
+                        points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                      />
+                      <polygon
+                        fill="currentColor"
+                        fillRule="nonzero"
+                        points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                      />
+                    </g>
+                  </svg>
+                </div>
                 <select
                   onChange={[Function]}
                   value="NaN"
@@ -394,12 +442,12 @@ exports[`Backend Project General Container renders correctly 1`] = `
                 className="input-predictive"
               >
                 <div
-                  className="input"
+                  className="input-predictive__input"
                 >
                   <input
                     aria-describedby={null}
                     aria-label="Add a Subject"
-                    className="text-input"
+                    className="input-predictive__text-input text-input"
                     onBlur={[Function]}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -411,15 +459,42 @@ exports[`Backend Project General Container renders correctly 1`] = `
                   />
                   <button
                     aria-hidden="true"
-                    className="manicon manicon-plus"
+                    className="input-predictive__button"
                     onClick={[Function]}
                     type="button"
-                  />
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="manicon-svg input-predictive__icon svg-icon--plus16"
+                      height={20}
+                      viewBox="0 0 16 16"
+                      width={20}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        <path
+                          d="M2.01435,8.5138 L2.014482,7.5138 L14.01435,7.5149 L14.014218,8.5149 L2.01435,8.5138 Z M8.5149,14.014218 L7.5149,14.01435 L7.5138,2.014482 L8.5138,2.01435 L8.5149,14.014218 Z"
+                          fill="currentColor"
+                          fillRule="nonzero"
+                        />
+                        <path
+                          d="M2.01435,8.5138 L2.014482,7.5138 L14.01435,7.5149 L14.014218,8.5149 L2.01435,8.5138 Z M8.5149,14.014218 L7.5149,14.01435 L7.5138,2.014482 L8.5138,2.01435 L8.5149,14.014218 Z"
+                          fill="currentColor"
+                          fillRule="nonzero"
+                        />
+                      </g>
+                    </svg>
+                  </button>
                 </div>
                 <nav
-                  className="predictive-list"
+                  className="input-predictive__results-wrapper"
                 >
-                  <ul />
+                  <ul
+                    className="input-predictive__results"
+                  />
                 </nav>
               </div>
               <ul
@@ -439,7 +514,7 @@ exports[`Backend Project General Container renders correctly 1`] = `
                     className="utility"
                   >
                     <button
-                      className="manicon manicon-x"
+                      className="utility__button"
                       onClick={[Function]}
                       type="button"
                     >
@@ -452,6 +527,30 @@ exports[`Backend Project General Container renders correctly 1`] = `
                         Subjects
                          list.
                       </span>
+                      <svg
+                        aria-hidden={true}
+                        className="manicon-svg utility__icon utility__icon--close svg-icon--close32"
+                        height={26}
+                        viewBox="0 0 32 32"
+                        width={26}
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          fill="none"
+                          fillRule="evenodd"
+                        >
+                          <path
+                            d="M7.00007316,7.70847994 L7.70712678,7.00132 L24.9999268,24.2915201 L24.2928732,24.99868 L7.00007316,7.70847994 Z M7.70712678,24.99868 L7.00007316,24.2915201 L24.2928732,7.00132 L24.9999268,7.70847994 L7.70712678,24.99868 Z"
+                            fill="currentColor"
+                            fillRule="nonzero"
+                          />
+                          <path
+                            d="M7.00007316,7.70847994 L7.70712678,7.00132 L24.9999268,24.2915201 L24.2928732,24.99868 L7.00007316,7.70847994 Z M7.70712678,24.99868 L7.00007316,24.2915201 L24.2928732,7.00132 L24.9999268,7.70847994 L7.70712678,24.99868 Z"
+                            fill="currentColor"
+                            fillRule="nonzero"
+                          />
+                        </g>
+                      </svg>
                     </button>
                   </div>
                 </li>
@@ -472,12 +571,12 @@ exports[`Backend Project General Container renders correctly 1`] = `
               className="input-predictive"
             >
               <div
-                className="input"
+                className="input-predictive__input"
               >
                 <input
                   aria-describedby={null}
                   aria-label="Enter a Tag"
-                  className="text-input"
+                  className="input-predictive__text-input text-input"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onFocus={[Function]}
@@ -489,15 +588,42 @@ exports[`Backend Project General Container renders correctly 1`] = `
                 />
                 <button
                   aria-hidden="true"
-                  className="manicon manicon-plus"
+                  className="input-predictive__button"
                   onClick={[Function]}
                   type="button"
-                />
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="manicon-svg input-predictive__icon svg-icon--plus16"
+                    height={20}
+                    viewBox="0 0 16 16"
+                    width={20}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      fillRule="evenodd"
+                    >
+                      <path
+                        d="M2.01435,8.5138 L2.014482,7.5138 L14.01435,7.5149 L14.014218,8.5149 L2.01435,8.5138 Z M8.5149,14.014218 L7.5149,14.01435 L7.5138,2.014482 L8.5138,2.01435 L8.5149,14.014218 Z"
+                        fill="currentColor"
+                        fillRule="nonzero"
+                      />
+                      <path
+                        d="M2.01435,8.5138 L2.014482,7.5138 L14.01435,7.5149 L14.014218,8.5149 L2.01435,8.5138 Z M8.5149,14.014218 L7.5149,14.01435 L7.5138,2.014482 L8.5138,2.01435 L8.5149,14.014218 Z"
+                        fill="currentColor"
+                        fillRule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </button>
               </div>
               <nav
-                className="predictive-list"
+                className="input-predictive__results-wrapper"
               >
-                <ul />
+                <ul
+                  className="input-predictive__results"
+                />
               </nav>
             </div>
             <div
