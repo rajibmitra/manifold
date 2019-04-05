@@ -102,7 +102,7 @@ export default class IngestionActions extends Component {
     if (!this.ingestion || !this.connected) return null;
 
     return (
-      <div className="buttons-icon-horizontal">
+      <div className="ingestion-output__buttons buttons-icon-horizontal">
         {this.startButton}
         {this.completeButton}
         {this.backButton}

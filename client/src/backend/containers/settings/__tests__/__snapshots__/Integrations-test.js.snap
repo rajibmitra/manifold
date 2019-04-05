@@ -3,11 +3,17 @@
 exports[`Backend Settings Integrations Container renders correctly 1`] = `
 <div>
   <header
-    className="backend-header section-heading-secondary"
+    className="backend-header"
   >
-    <h1>
-      External Integrations Settings
-    </h1>
+    <div
+      className="backend-header__inner"
+    >
+      <h1
+        className="backend-header__title backend-header__title--large"
+      >
+        External Integrations Settings
+      </h1>
+    </div>
   </header>
   <div
     className="backend-panel"

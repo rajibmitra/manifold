@@ -3,11 +3,17 @@
 exports[`Backend Settings Email Container when delivery method is sendmail renders correctly 1`] = `
 <section>
   <header
-    className="backend-header section-heading-secondary"
+    className="backend-header"
   >
-    <h1>
-      Email Settings
-    </h1>
+    <div
+      className="backend-header__inner"
+    >
+      <h1
+        className="backend-header__title backend-header__title--large"
+      >
+        Email Settings
+      </h1>
+    </div>
   </header>
   <div
     className="backend-panel"
@@ -196,26 +202,15 @@ The Manifold Team"
                       <svg
                         aria-hidden={true}
                         className="manicon-svg form-select__icon svg-icon--disclosureDown16"
+                        fill="currentColor"
                         height={20}
                         viewBox="0 0 16 16"
                         width={20}
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g
-                          fill="none"
-                          fillRule="evenodd"
-                        >
-                          <polygon
-                            fill="currentColor"
-                            fillRule="nonzero"
-                            points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
-                          />
-                          <polygon
-                            fill="currentColor"
-                            fillRule="nonzero"
-                            points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
-                          />
-                        </g>
+                        <polygon
+                          points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                        />
                       </svg>
                       <select
                         aria-describedby="select-error-1"
@@ -334,11 +329,17 @@ The Manifold Team"
 exports[`Backend Settings Email Container when delivery method is smtp renders correctly 1`] = `
 <section>
   <header
-    className="backend-header section-heading-secondary"
+    className="backend-header"
   >
-    <h1>
-      Email Settings
-    </h1>
+    <div
+      className="backend-header__inner"
+    >
+      <h1
+        className="backend-header__title backend-header__title--large"
+      >
+        Email Settings
+      </h1>
+    </div>
   </header>
   <div
     className="backend-panel"
@@ -527,26 +528,15 @@ The Manifold Team"
                       <svg
                         aria-hidden={true}
                         className="manicon-svg form-select__icon svg-icon--disclosureDown16"
+                        fill="currentColor"
                         height={20}
                         viewBox="0 0 16 16"
                         width={20}
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g
-                          fill="none"
-                          fillRule="evenodd"
-                        >
-                          <polygon
-                            fill="currentColor"
-                            fillRule="nonzero"
-                            points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
-                          />
-                          <polygon
-                            fill="currentColor"
-                            fillRule="nonzero"
-                            points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
-                          />
-                        </g>
+                        <polygon
+                          points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+                        />
                       </svg>
                       <select
                         aria-describedby="select-error-1"

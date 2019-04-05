@@ -7,9 +7,12 @@
     padding-bottom: 0; // sorry. hacked it.
   }
 
+  &__title-block {
+    margin: 0 0 30px;
+  }
+
   &__title {
     @include templateHead;
-    margin: 0 0 30px;
     font-size: 16px;
     font-weight: $semibold;
     color: $neutral20;

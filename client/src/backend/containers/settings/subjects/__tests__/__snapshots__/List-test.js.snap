@@ -8,12 +8,15 @@ Array [
     id="entities-list1"
   >
     <header
-      className="entity-list__title backend-header section-heading-secondary"
+      className="entity-list__title-block backend-header"
     >
-      <h1>
-         
-        Project Subjects
-      </h1>
+      <div
+        className="backend-header__inner backend-header__inner--narrow"
+      >
+        <div
+          className="backend-header__content-flex-wrapper"
+        />
+      </div>
     </header>
     <div
       className="entity-list__contents-wrapper"

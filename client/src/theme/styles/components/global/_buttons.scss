@@ -1,6 +1,63 @@
-// Reset bare button class for using icons only
-.button-bare-icon {
+.utility-button {
   @include buttonUnstyled;
+  @include templateHead;
+  display: inline-flex;
+  align-items: center;
+  margin-left: -2px;
+  font-size: 12px;
+  font-weight: $semibold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+
+  & + & {
+    margin-left: 1em;
+
+    @include respond($break40) {
+      margin-left: 2em;
+    }
+  }
+
+  &--underlined {
+    text-decoration: underline;
+  }
+
+  &__icon,
+  &__text {
+    .utility-button:not(:disabled):hover &,
+    .utility-button:not(:disabled):focus & {
+      color: $neutral20;
+    }
+
+    .utility-button:disabled & {
+      color: $neutral50;
+      opacity: 0.5;
+    }
+  }
+
+  &__icon {
+    color: $neutral50;
+    transition: color $duration $timing;
+
+    &--primary {
+      color: $accentPrimary;
+    }
+
+    &--red {
+      color: $sp40Tertiary;
+    }
+  }
+
+  &__text {
+    display: none;
+    margin-left: 0.417em;
+    color: $neutral50;
+    transition: color $duration $timing;
+
+    @include respond($break40) {
+      display: block;
+    }
+  }
 }
 
 .button-bare-primary {
@@ -20,14 +77,40 @@
     color: $neutral95;
     outline: 0;
 
-    .drawer-backend &, .bg-neutral90 & {
+    .drawer-backend &,
+    .bg-neutral90 & {
       color: $neutral80;
+    }
+  }
+
+  &--underlined {
+    text-decoration: underline;
+
+    &:hover {
+      color: $neutral80;
+    }
+  }
+
+  &__icon {
+    color: $accentPrimary;
+
+    &--red {
+      color: $sp40Tertiary;
     }
   }
 }
 
 // Vertical arrangement for bare buttons.
 .buttons-bare-vertical {
+  &__button {
+    margin-bottom: 11px;
+    // font-size: 14px;
+
+    @include respond($break65) {
+      // font-size: 16px;
+    }
+  }
+
   .button-bare-primary {
     margin-bottom: 11px;
     font-size: 14px;

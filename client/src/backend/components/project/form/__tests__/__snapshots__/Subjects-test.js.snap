@@ -74,26 +74,15 @@ exports[`Backend Project Form Subjects Component renders correctly 1`] = `
             <svg
               aria-hidden={true}
               className="manicon-svg utility__icon utility__icon--close svg-icon--close32"
+              fill="currentColor"
               height={26}
               viewBox="0 0 32 32"
               width={26}
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g
-                fill="none"
-                fillRule="evenodd"
-              >
-                <path
-                  d="M7.00007316,7.70847994 L7.70712678,7.00132 L24.9999268,24.2915201 L24.2928732,24.99868 L7.00007316,7.70847994 Z M7.70712678,24.99868 L7.00007316,24.2915201 L24.2928732,7.00132 L24.9999268,7.70847994 L7.70712678,24.99868 Z"
-                  fill="currentColor"
-                  fillRule="nonzero"
-                />
-                <path
-                  d="M7.00007316,7.70847994 L7.70712678,7.00132 L24.9999268,24.2915201 L24.2928732,24.99868 L7.00007316,7.70847994 Z M7.70712678,24.99868 L7.00007316,24.2915201 L24.2928732,7.00132 L24.9999268,7.70847994 L7.70712678,24.99868 Z"
-                  fill="currentColor"
-                  fillRule="nonzero"
-                />
-              </g>
+              <path
+                d="M7.00007316,7.70847994 L7.70712678,7.00132 L24.9999268,24.2915201 L24.2928732,24.99868 L7.00007316,7.70847994 Z M7.70712678,24.99868 L7.00007316,24.2915201 L24.2928732,7.00132 L24.9999268,7.70847994 L7.70712678,24.99868 Z"
+              />
             </svg>
           </button>
         </div>
