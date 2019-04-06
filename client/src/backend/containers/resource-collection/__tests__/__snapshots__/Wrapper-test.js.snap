@@ -153,31 +153,49 @@ exports[`Backend ResourceCollection Wrapper Container renders correctly 1`] = `
         className="dropdown-nav backend-header__section-nav"
       >
         <button
-          className="trigger"
+          className="dropdown-nav__trigger"
           onClick={[Function]}
         >
           <div
-            className="selected"
+            className="dropdown-nav__selected"
           >
             
-            <i
-              className="manicon manicon-caret-down"
-            />
+            <svg
+              aria-hidden={true}
+              className="manicon-svg dropdown-nav__trigger-icon svg-icon--disclosureDown16"
+              fill="currentColor"
+              height={16}
+              viewBox="0 0 16 16"
+              width={16}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="8 9.702 13.356 5 13.999 5.733 8 10.999 2 5.733 2.643 5"
+              />
+            </svg>
           </div>
         </button>
-        <ul>
-          <li>
+        <ul
+          className="dropdown-nav__nav-list"
+        >
+          <li
+            className="dropdown-nav__nav-item"
+          >
             <a
               aria-current={null}
+              className="dropdown-nav__link"
               href="/backend/projects/resource-collection/1/general"
               onClick={[Function]}
             >
               General
             </a>
           </li>
-          <li>
+          <li
+            className="dropdown-nav__nav-item"
+          >
             <a
               aria-current={null}
+              className="dropdown-nav__link"
               href="/backend/projects/resource-collection/1/resources"
               onClick={[Function]}
             >
